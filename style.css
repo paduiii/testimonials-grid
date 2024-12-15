@@ -77,9 +77,23 @@ p {
   width: 580px;
   height: 280px;
   padding: 30px;
+  position: relative;
+}
+
+.card.Daniel::after {
+  content: '“';
+  font-size: 500px;
+  color: hsla(0, 0%, 100%, 0.2);
+  position: absolute;
+  bottom: -150px;
+  right: 70px;
+  font-family: sans-serif ;
+  z-index: 0;
 }
 
 .card.Daniel h4, .card.Daniel h5, .card.Daniel p, .card.Daniel .quote {
+  position: relative;
+  z-index: 1;
   color: hsl(0, 0%, 100%);
 }
 
@@ -195,6 +209,12 @@ p {
   .card.Daniel {
     width: 280px;
     height: auto;
+  }
+
+  .card.Daniel::after {
+    font-size: 440px;
+    bottom: 107px;
+    right: -17px;
   }
 
   .card.Jonathan {
